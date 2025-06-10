@@ -1,19 +1,18 @@
 class Pessoa:
-    def __init__(self, altura, idade):
+    def __init__(self, altura, cpf):
         self.altura = altura
-        self.idade = idade
+        self. cpf = cpf
         
     
-    def comer(self):
-        print("Estou comendo")
+    def apresentar(self):
+        print(f'Olá! Minha altura - {self.altura}')
+        self.__coletar_documento()
+       
         
-        
-    def correr(self):
-        print("Estou correndo")
-        
+    def __coletar_documento(self):
+        print(f'Meu documento - {self.cpf}')
+            
+            
+joao = Pessoa("1.70", "Numero de CPF")
 
-joao = Pessoa(170, 23)
-
-joao.comer()
-
-joao.correr()
+joao.apresentar()

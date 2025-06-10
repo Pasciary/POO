@@ -3,11 +3,10 @@ class MinhaClasse:
     def __init__(self, info, elem): # metodo construtor, construir os atributos.
         print("Estou no construtor")
         self.atributo1 = "Meu atributo"
-        self.atributo2 = [1, 2, "a"]
-        self.atributo3 = elem
+        self.atributo2 = elem
+        self.atributo3 = [1, 2, "a"]
         self.atributo_novo = info
         print(self.atributo_novo)
-    
     
     
     def metodo1(self):
