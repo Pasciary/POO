@@ -18,19 +18,19 @@ class Celular:
 class Pessoa:
     
     def __init__(self, celular: Celular) -> None:
-        self.celular = celular
+        self.__celular = celular
       
       
     def pedir_pizza(self) -> None:
         print('buscando o celular...')
         print('escolhendo o sabor...')
-        self.celular.enviar_mensagem('Quero uma pizza de calabreza')
+        self.__celular.enviar_mensagem('Quero uma pizza de calabreza')
         print('Aguardando chegada')
         
         
     def estudar(self) -> None:
         print('Abrindo o computador...')
-        self.celular.abrir_youtube()
+        self.__celular.abrir_youtube()
         print('Fazendo anotações')
         
         
