@@ -25,4 +25,4 @@ class Cachorro(Mamifero): # Tendo a relação de Herança de mamiferos.
 pug = Cachorro("Brazil")
 pug.latir()
 pug._dormir() # Não deveria funcionar, em outras linguas não funcionaria, é uma convenção.
-print(pug._tamanho)
+print(pug._tamanho) # Elementos protegidos não são chamados por objetos
